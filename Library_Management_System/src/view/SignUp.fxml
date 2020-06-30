@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUp" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="406.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="608.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="#785f77" offset="0.007662835249042145" />
+                  <Stop color="#5f7078" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#838f9a" height="324.0" layoutX="50.0" layoutY="40.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="507.0" />
+      <ImageView fitHeight="93.0" fitWidth="89.0" layoutX="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-add-user-group-woman-man-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="252.0" layoutY="88.0" text="SIGN UP" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="141.0" text="UserName" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="178.0" text="Password" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="213.0" text="Email Address" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="253.0" text="Telephone No." textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="291.0" layoutY="137.0" />
+      <TextField fx:id="txtPhone" layoutX="291.0" layoutY="248.0" />
+      <TextField fx:id="txtEmail" layoutX="291.0" layoutY="209.0" />
+      <JFXButton fx:id="btnSignUp" layoutX="300.0" layoutY="298.0" onAction="#btnSignUp_OnAction" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #3D8DF3; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="9.0" layoutY="9.0" onMouseClicked="#navigateLogin_OnMouseClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-go-back-96.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="291.0" layoutY="174.0" />
+      <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="476.0" layoutY="174.0" onMouseClicked="#showPassword_OnMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-eye-96.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPasswordVisible" layoutX="291.0" layoutY="174.0" />
+      <Pane fx:id="up" layoutX="443.0" layoutY="137.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="ur" fitHeight="25.0" fitWidth="14.0" layoutX="5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8-checkmark-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="ep" layoutX="443.0" layoutY="209.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="er" fitHeight="25.0" fitWidth="14.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8-checkmark-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pp" layoutX="443.0" layoutY="174.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="pr" fitHeight="25.0" fitWidth="14.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8-checkmark-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="25.0" fitWidth="14.0" layoutX="4.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-checkmark-80.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="tp" layoutX="444.0" layoutY="247.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="tr" fitHeight="25.0" fitWidth="14.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/icons8-checkmark-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

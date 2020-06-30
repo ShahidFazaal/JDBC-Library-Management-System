@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="returnConfirmation" prefHeight="394.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReturnConfirmationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6e6" height="60.0" layoutX="12.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="831.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b3ffcc" height="49.0" layoutX="12.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="831.0" />
+      <Label layoutX="309.0" layoutY="352.0" text="#223A 1/2, Galle Road, Panadura">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="369.0" text="Contact No: +94 38 2222 800" />
+      <Label layoutX="21.0" layoutY="117.0" prefHeight="17.0" prefWidth="32.0" text="NIC" />
+      <Label layoutX="117.0" layoutY="117.0" text="NAME" />
+      <Label layoutX="188.0" layoutY="117.0" text="BOOK&#10;" />
+      <Label layoutX="433.0" layoutY="117.0" text="TO BE RETURN" />
+      <Label layoutX="533.0" layoutY="117.0" text="RETURNING DATE" />
+      <Label layoutX="313.0" layoutY="117.0" text="BORROWED DATE" />
+      <TextField fx:id="txtLateFee" editable="false" layoutX="639.0" layoutY="166.0" prefHeight="25.0" prefWidth="91.0" />
+      <Label layoutX="646.0" layoutY="117.0" text="LATE FEE (RS.)" />
+      <JFXButton fx:id="btnConfirm" layoutX="737.0" layoutY="166.0" onAction="#btnConfirm_OnAction" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: grey;" text="Confirm" />
+      <Label fx:id="lblToBeReturnDate" layoutX="433.0" layoutY="170.0" prefHeight="17.0" prefWidth="91.0" text="Label" textFill="#3300ff" />
+      <Label fx:id="lblReturningDate" layoutX="545.0" layoutY="170.0" prefHeight="17.0" prefWidth="74.0" text="Label" textFill="#0d00ff" />
+      <Label fx:id="lblBoroowDate" layoutX="315.0" layoutY="170.0" prefHeight="17.0" prefWidth="79.0" text="Label" textFill="#1b06ff" />
+      <Label fx:id="lblBook" layoutX="186.0" layoutY="159.0" prefHeight="49.0" prefWidth="118.0" text="Harry potter and&#10;the chamber of&#10;secret&#10;&#10;" wrapText="true" />
+      <Label fx:id="lblName" layoutX="116.0" layoutY="170.0" prefHeight="17.0" prefWidth="55.0" text="Label" />
+      <Label fx:id="lblNic" layoutX="20.0" layoutY="170.0" prefHeight="17.0" prefWidth="91.0" text="Label" />
+      <Label layoutX="349.0" layoutY="299.0" prefHeight="53.0" prefWidth="198.0" text="IJSE" textFill="#cd0404">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="6.0" text="IJSE Library" textFill="#464040">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="38.0" text="This book must be return on or the before the date mentioned bellow. You kept this for beyod that date &#10;You will be charge Rs.50." textFill="#fc0e0e" />
+      <ImageView fx:id="imgCheck" fitHeight="25.0" fitWidth="32.0" layoutX="806.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-checkmark-80.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOk" layoutX="735.0" layoutY="225.0" onAction="#btnOk_OnAction" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: lightgreen;" text="OK" />
+   </children>
+</AnchorPane>

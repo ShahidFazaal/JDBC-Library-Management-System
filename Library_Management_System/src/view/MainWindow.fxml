@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Main" prefHeight="403.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <Rectangle fx:id="view3" arcHeight="5.0" arcWidth="5.0" fill="#edeeee" height="304.0" layoutX="308.0" layoutY="86.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.2" width="332.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5e2ee" height="109.0" layoutX="479.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5e2ee" height="109.0" layoutX="348.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5e2ee" height="109.0" layoutX="478.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5e2ee" height="109.0" layoutX="347.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+      <Rectangle fx:id="view0" arcHeight="5.0" arcWidth="5.0" fill="#2980b9" height="71.0" layoutX="5.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="635.0" />
+      <Label layoutX="235.0" layoutY="40.0" text="Library Management System" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="73.0" layoutX="21.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" prefHeight="53.0" prefWidth="198.0" text="IJSE" textFill="#cd0404">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="15.0" text="Institute Of&#10;Software&#10;Engineering" textFill="WHITE" />
+      <Rectangle fx:id="view" arcHeight="5.0" arcWidth="5.0" fill="#edeeee" height="109.0" layoutX="6.0" layoutY="85.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.2" width="288.0" />
+      <Label layoutX="13.0" layoutY="88.0" prefHeight="17.0" prefWidth="188.0" text="Book And Members" textFill="#475eb9" />
+      <Label layoutX="13.0" layoutY="108.0" text="Total Number Of Books :" />
+      <Label layoutX="14.0" layoutY="131.0" text="Total Number Of Members:" />
+      <Label layoutX="15.0" layoutY="151.0" text="Available Number Of Books:" />
+      <Rectangle fx:id="view1" arcHeight="5.0" arcWidth="5.0" fill="#edeeee" height="109.0" layoutX="5.0" layoutY="203.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.2" width="288.0" />
+      <Label layoutX="13.0" layoutY="213.0" text="Number Of Books A Member can Issue:  " />
+      <Label layoutX="14.0" layoutY="234.0" text="Number Of Days A Member Can Keep The Book :  " />
+      <Label layoutX="14.0" layoutY="258.0" text="Late Fee per Day:" />
+      <Rectangle fx:id="view2" arcHeight="5.0" arcWidth="5.0" fill="#edeeee" height="71.0" layoutX="5.0" layoutY="321.0" stroke="BLACK" strokeLineCap="ROUND" strokeWidth="0.2" width="288.0" />
+      <Label layoutX="30.0" layoutY="342.0" text="Total Recieved Fines :" />
+      <Label fx:id="lblTotalFine" layoutX="158.0" layoutY="342.0" text="Not Recieved Yet" textFill="#ee0909" />
+      <Label layoutX="228.0" layoutY="210.0" text="2" textFill="#e40707" />
+      <Label layoutX="280.0" layoutY="232.0" text="7" textFill="#e40707" />
+      <Label layoutX="112.0" layoutY="260.0" prefHeight="17.0" prefWidth="54.0" text="RS.50.00" textFill="#e40707" />
+      <Label fx:id="lblBookCount" layoutX="157.0" layoutY="109.0" prefHeight="17.0" prefWidth="64.0" text="0" textFill="#e40707" />
+      <Label fx:id="tblMemberCount" layoutX="170.0" layoutY="131.0" prefHeight="17.0" prefWidth="54.0" text="0" textFill="#e40707" />
+      <Label fx:id="lblAvailableBook" layoutX="174.0" layoutY="151.0" prefHeight="17.0" prefWidth="67.0" text="0" textFill="#e40707" />
+      <Label fx:id="lblUser" layoutX="554.0" layoutY="27.0" text="User" textFill="WHITE" />
+      <ImageView fx:id="imgBookIssue" fitHeight="53.0" fitWidth="54.0" layoutX="379.0" layoutY="132.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/201556.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBookEntry" fitHeight="53.0" fitWidth="54.0" layoutX="379.0" layoutY="256.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-add-book-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMemberEntry" fitHeight="53.0" fitWidth="54.0" layoutX="510.0" layoutY="256.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/icons8-add-user-group-woman-man-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBookReturn" fitHeight="53.0" fitWidth="54.0" layoutX="511.0" layoutY="137.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/090-512.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtIssue" layoutX="375.0" layoutY="201.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" text="Book Issue">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAdd" layoutX="379.0" layoutY="320.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" text="Book Entry">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtMemberAdd" layoutX="502.0" layoutY="317.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" text="Member Entry">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtReturn" layoutX="508.0" layoutY="201.0" onMouseClicked="#navigate" onMouseEntered="#PlayOnMouseEnter" onMouseExited="#PlayOnMouseExit" text="Book Return">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
